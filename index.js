@@ -29,6 +29,7 @@ mongoose
   .connect(process.env.DATABASE,{ useNewUrlParser: true ,useUnifiedTopology: true}
   )
   .then(result => {
+    console.log(port);
     app.listen(port);
   })
   .catch(err => console.log(err));
